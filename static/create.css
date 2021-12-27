@@ -340,7 +340,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .nav .nav-end {
+  .nav .nav-mid {
     display: none;
   }
   .nav .nav-start a {
@@ -440,10 +440,14 @@ form button {
   width: 100%;
   height: 100vh;
   backdrop-filter: blur(2px);
-  transition: all 0.2s ease-in-out;
+  transition: all 1s ease;
+  opacity: 0;
 }
+
 .confermation .cbox {
+  position: relative;
   width: 300px;
+  height: auto;
   background: white;
   display: flex;
   justify-content: center;
@@ -453,10 +457,41 @@ form button {
   padding: 20px;
   border-radius: 15px;
 }
+.confermation .cbox .close-s {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 41, 58);
+  color: white;
+  top: -15px;
+  right: -15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
 .cbox p {
   text-align: center;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
+  width: 100%;
+  background-color: rgb(41, 41, 41);
+  border-radius: 10px;
+  word-wrap: break-word;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+.cbox h5 {
+  text-align: center;
+  background-color: rgb(211, 211, 211);
+  color: rgb(42, 42, 42);
+  padding: 5px;
+  display: none;
+  font-size: 14px;
+  margin-bottom: 0px;
+  border-radius: 7px;
 }
 
 .cbox .btns {
